@@ -1,0 +1,16 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-browserify": "~2.1.0",
+    "baconjs": "~0.7.15",
+    "grunt-react": "~0.8.2",
+    "react-tools": "~0.10.0",
+    "jquery": "~2.1.1"
+  }
+}
