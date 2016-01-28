@@ -26,7 +26,7 @@ const UrlList = ({ DOM, urls$ }) => {
         }
       };
     });
-  });
+  }).shareReplay(1);
 
   const itemAction$ = state$.flatMapLatest((list) => {
     return Observable.merge(list.map((i) => {
