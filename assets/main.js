@@ -75,7 +75,9 @@ function main(sources) {
   });
 
   const deleteQuery$ =
-    urlList.itemAction$.map((action) => {
+    urlList.itemAction$
+     .filter(({type}) => type === "delete")
+     .map((action) => {
       return {
         eager: true,
         url: "/api/urls/" + action.url_id,
